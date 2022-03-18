@@ -60,3 +60,10 @@ li {
   list-style: none;
   margin-right: 1em;
 }
+
+/* Add styles to the logo */
+.logo {
+  text-decoration: none;
+  color: #172b4d;
+  font-size: x-large;
+}
