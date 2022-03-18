@@ -3,3 +3,8 @@ body,
   margin: 0;
   padding: 0;
 }
+body {
+  background: #e5e5e5;
+  background-image: url("img/Header-llustration-desktop.png");
+  background-size:100%;
+}
