@@ -40,3 +40,16 @@ header {
   justify-content: space-between;
   text-align: center;
 }
+/* Add space between headline's div  */
+.primary,
+.social-media-icons {
+  padding-top: 2em;
+}
+.supporting-text {
+  padding-top: 1.5em;
+}
+.disabled-btn {
+  padding-top: 4em;
+}
+
+/* Add styles to the social-media-icons */
