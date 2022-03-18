@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# ***my-professional-repository*** project
+# **_my-professional-repository_** project
 
 > Description: This is a professional project with Micoverse, This project was built to show My professional work and projects as a full-stack web developer.
 
@@ -36,6 +36,8 @@ _N.B: Make sure that you have node installed in your commputer, if not [Download
 
 Navigate to the Folder and Double Click on index.html File or you can simply open project with live server in your editor.
 Project will open and running to your Browser.
+
+- Use Inspect Element feauture in the browser with ** Demensions: Responsive 375 x 650 100%**, same details found on figma templates
 
 Learn more about [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer#:~:text=Shortcuts%20to%20Start%2FStop%20Server&text=Open%20a%20HTML%20file%20and,on%20Open%20with%20Live%20Server%20.&text=Open%20the%20Command%20Pallete%20by,Server%20to%20stop%20a%20server)
 
