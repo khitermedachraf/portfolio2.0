@@ -3,8 +3,21 @@ body,
   margin: 0;
   padding: 0;
 }
-body {
+main {
   background: #e5e5e5;
-  background-image: url("img/Header-llustration-desktop.png");
-  background-size:100%;
+  background-image: url("img/header-illsutration-mobile@2x.png");
+  background-size: cover;
+  height: 550px;
+}
+
+header {
+  padding: 1em;
+  background: #e5e5e5;
+}
+
+.flex-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
