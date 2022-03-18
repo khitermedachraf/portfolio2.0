@@ -3,16 +3,20 @@ body,
   margin: 0;
   padding: 0;
 }
+
+/* Add the background Image */
 main {
-  background: #e5e5e5;
+  background: #fff;
   background-image: url("img/header-illsutration-mobile@2x.png");
   background-size: cover;
-  height: 550px;
+  padding: 1.5em;
+  height: fit-content;
 }
 
+/* Add styles to the header section */
 header {
   padding: 1em;
-  background: #e5e5e5;
+  background: #fff;
 }
 
 .flex-div {
@@ -20,4 +24,19 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Add styles to the headline section */
+.dark-blue {
+  color: #172b4d;
+}
+.light-green {
+  color: #36b37e;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 }
