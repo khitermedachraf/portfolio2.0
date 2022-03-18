@@ -1,0 +1,70 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add the background Image */
+main {
+  background: #fff;
+  background-image: url("img/header-illsutration-mobile@2x.png");
+  background-size: cover;
+  padding: 1.5em;
+}
+
+/* Add styles to the header section */
+header {
+  padding: 1em;
+  background: #fff;
+}
+
+.flex-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add styles to the headline section */
+.dark-blue {
+  color: #172b4d;
+}
+
+.light-green {
+  color: #36b37e;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Add space between headline's div  */
+.primary,
+.social-media-icons {
+  padding-top: 3em;
+}
+
+.supporting-text {
+  padding-top: 1.5em;
+}
+
+.disabled-btn {
+  padding-top: 6em;
+}
+
+/* Add styles to the social-media-icons */
+li {
+  list-style: none;
+  margin-right: 1em;
+}
+
+/* Add styles to the logo */
+.logo {
+  text-decoration: none;
+  color: #172b4d;
+  font-size: x-large;
+}
