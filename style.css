@@ -29,9 +29,11 @@ header {
 .dark-blue {
   color: #172b4d;
 }
+
 .light-green {
   color: #36b37e;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -44,9 +46,11 @@ header {
 .social-media-icons {
   padding-top: 3em;
 }
+
 .supporting-text {
   padding-top: 1.5em;
 }
+
 .disabled-btn {
   padding-top: 6em;
 }
