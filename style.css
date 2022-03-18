@@ -10,7 +10,6 @@ main {
   background-image: url("img/header-illsutration-mobile@2x.png");
   background-size: cover;
   padding: 1.5em;
-  height: fit-content;
 }
 
 /* Add styles to the header section */
@@ -43,13 +42,17 @@ header {
 /* Add space between headline's div  */
 .primary,
 .social-media-icons {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 .supporting-text {
   padding-top: 1.5em;
 }
 .disabled-btn {
-  padding-top: 4em;
+  padding-top: 6em;
 }
 
 /* Add styles to the social-media-icons */
+li {
+  list-style: none;
+  margin-right: 1em;
+}
