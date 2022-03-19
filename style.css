@@ -202,7 +202,7 @@ p {
   /* Auto layout */
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   padding: 0 2px;
 }
@@ -210,16 +210,16 @@ p {
 .title-and-tags h3 {
   text-align: center;
   padding: 2em;
-  font-size: larger;
+  font-size: x-large;
 }
 
-.tags a {
+.title-and-tags a {
   text-decoration: none;
   font-size: medium;
-  color: #3a4a42;
-  padding: 8px 12px;
+  color: #36b37e;
+  padding:12px;
 
   /* Theme 2 / Neutral 10 */
-  background: #ebf0ee;
+  background: #fff;
   border-radius: 4px;
 }
