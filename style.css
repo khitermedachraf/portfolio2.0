@@ -5,7 +5,7 @@ body,
 }
 
 /* Add the background Image */
-main {
+#headline {
   background: #fff;
   background-image: url("img/header-illsutration-mobile@2x.png");
   background-size: cover;
@@ -156,7 +156,7 @@ p {
   /* style the button */
   border: 0;
   padding: 12px;
-  width: 122px;
+  width: fit-content;
   height: 48px;
 
   /* Theme 2 / Primary 2 */
@@ -170,4 +170,56 @@ p {
 .tags a :hover,
 .see-demo-btn a:hover {
   cursor: pointer;
+}
+
+/* Add styles to the about me section grid-layouts + flexbox  */
+
+#about-me h2:first-child {
+  text-align: center;
+  margin: 1em;
+  font-size: 250%;
+}
+
+#about-me p {
+  text-align: center;
+  margin: 1em;
+  font-size: x-large;
+}
+
+#about-me button {
+  display: block;
+  margin: 1em auto;
+}
+
+.skill-placeholder {
+  height: 350px;
+  background: #ebf0ee;
+
+  /* Design the grid item */
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2px;
+}
+
+.title-and-tags h3 {
+  text-align: center;
+  padding: 2em;
+  font-size: larger;
+}
+
+.tags a {
+  text-decoration: none;
+  font-size: medium;
+  color: #3a4a42;
+  padding: 8px 12px;
+
+  /* Theme 2 / Neutral 10 */
+  background: #ebf0ee;
+  border-radius: 4px;
 }
