@@ -81,15 +81,24 @@ p {
 
 #my-works h2:first-child {
   text-align: center;
+  margin-top: 1em;
 }
 
 .project-placeholder {
-  height: 274px;
-  width: 327px;
+  height: 474px;
   background: #ebf0ee;
 }
 
 .center {
   display: block;
   margin:2em auto;
+}
+.grid-layout{
+  width: 75%;
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(327px, 1fr));
+  justify-content: center;
+  align-content: space-around;
+  gap: 1.5em;
 }
