@@ -166,16 +166,16 @@ p {
   text-decoration: none;
   color: #fff;
   font-size: large;
+  cursor: pointer;
 }
 
-.tags a :hover,
-.see-demo-btn a:hover {
+.tags a :hover {
   cursor: pointer;
 }
 
 /* Add styles to the about me section grid-layouts + flexbox  */
 
-#about-me h2:first-child {
+#about-me h2 {
   text-align: center;
   margin: 1em;
   font-size: 250%;
@@ -224,6 +224,10 @@ p {
   border-radius: 4px;
 }
 
+.see-demo-btn a:hover {
+  cursor: pointer;
+}
+
 .flex-row-skills {
   display: flex;
   flex-direction: row;
@@ -231,7 +235,21 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .skill-tags,
 .skill-tags li {
   margin-top: 2em;
+}
+#about-me {
+  position: relative;
+}
+.aboutme-img1 {
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+
+.aboutme-img2 {
+  position: absolute;
+  left: 0;
 }
