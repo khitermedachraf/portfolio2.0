@@ -99,7 +99,7 @@ p {
   width: 75%;
   margin: 2em auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   align-content: space-around;
   gap: 1.5em;
@@ -137,4 +137,31 @@ p {
   font-size: x-large;
   padding: 0 8px;
 }
+.tags a {
+  text-decoration: none;
+  font-size: medium;
+  color: #3a4a42;
+  padding: 8px 12px;
+  /* Theme 2 / Neutral 10 */
+  background: #ebf0ee;
+  border-radius: 4px;
+}
 
+.see-demo-btn {
+  border: 0;
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  /* Theme 2 / Primary 2 */
+  background: #36b37f;
+  border-radius: 4px;
+}
+.see-demo-btn a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: large;
+}
+.tags a :hover,
+.see-demo-btn a:hover{
+  cursor: pointer;
+}
