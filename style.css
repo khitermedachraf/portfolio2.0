@@ -73,6 +73,7 @@ h1,
 h2 {
   font-size: xx-large;
 }
+
 p {
   font-size: large;
 }
@@ -87,12 +88,24 @@ p {
 .project-placeholder {
   height: 474px;
   background: #ebf0ee;
+
+  /* Design the grid item */
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: stretch;
+  padding: 0 2px;
 }
 
 .center {
   display: block;
   margin: 2em auto;
 }
+
 /* Design the crid container */
 .grid-layout {
   box-sizing: border-box;
@@ -105,26 +118,15 @@ p {
   gap: 1.5em;
 }
 
-/* Design the grid item */
-.project-placeholder {
-  border: 2px solid #d0d9d4;
-  border-radius: 8px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: stretch;
-  padding: 0 2px;
-}
-
 .properties {
   min-width: 318px;
   height: 222px;
 
   /* Neutrals/N0 */
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   margin: 2px;
+
   /* Add flexbox */
   display: flex;
   flex-direction: column;
@@ -132,35 +134,39 @@ p {
   justify-content: space-evenly;
   text-align: center;
 }
+
 .properties h3 {
   text-align: center;
   font-size: x-large;
   padding: 0 8px;
 }
+
 .tags a {
   text-decoration: none;
   font-size: medium;
   color: #3a4a42;
   padding: 8px 12px;
+
   /* Theme 2 / Neutral 10 */
   background: #ebf0ee;
   border-radius: 4px;
 }
 
 .see-demo-btn {
+  /* style the button */
   border: 0;
   padding: 12px;
   width: 122px;
   height: 48px;
+
   /* Theme 2 / Primary 2 */
   background: #36b37f;
   border-radius: 4px;
-}
-.see-demo-btn a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-size: large;
 }
+
 .tags a :hover,
 .see-demo-btn a:hover {
   cursor: pointer;
