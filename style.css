@@ -125,4 +125,16 @@ p {
   background: #ffffff;
   border-radius: 8px;
   margin: 2px;
+  /* Add flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
 }
+.properties h3 {
+  text-align: center;
+  font-size: x-large;
+  padding: 0 8px;
+}
+
