@@ -81,7 +81,7 @@ p {
 
 /* Add styles to the works section grid-layouts + flexbox  */
 
-#my-works h2:first-child {
+#my-works h2 {
   text-align: center;
   margin-top: 1em;
 }
@@ -113,7 +113,9 @@ p {
   width: 75%;
   margin: 2em auto;
   display: grid;
+  display: -ms-grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  -ms-grid-columns: repeat(auto-fit, minmax(380px, 1fr));
   justify-content: center;
   align-content: space-around;
   gap: 1.5em;
@@ -158,6 +160,7 @@ p {
   border: 0;
   padding: 12px;
   width: fit-content;
+  width: -moz-fit-content;
   height: 48px;
 
   /* Theme 2 / Primary 2 */
@@ -216,6 +219,7 @@ p {
 .title-and-tags a {
   text-decoration: none;
   font-size: medium;
+  font-weight: bold;
   color: #36b37e;
   padding: 12px;
 
@@ -240,9 +244,11 @@ p {
 .skill-tags li {
   margin-top: 2em;
 }
+
 #about-me {
   position: relative;
 }
+
 .aboutme-img1 {
   position: absolute;
   top: -50px;
