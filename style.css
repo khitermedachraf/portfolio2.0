@@ -99,7 +99,7 @@ p {
   width: 75%;
   margin: 2em auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   justify-content: center;
   align-content: space-around;
   gap: 1.5em;
@@ -156,12 +156,12 @@ p {
   background: #36b37f;
   border-radius: 4px;
 }
-.see-demo-btn a{
+.see-demo-btn a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: large;
 }
 .tags a :hover,
-.see-demo-btn a:hover{
+.see-demo-btn a:hover {
   cursor: pointer;
 }
