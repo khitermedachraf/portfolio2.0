@@ -87,8 +87,8 @@ p {
 }
 
 .project-placeholder {
-  height: 474px;
   background: #ebf0ee;
+  height: auto;
 
   /* Design the grid item */
   border: 2px solid #d0d9d4;
@@ -249,15 +249,31 @@ p {
   position: relative;
 }
 
+/* Add and fix pngs to the background */
 .png1 {
   padding: 2em;
   background-image: url("img/aboutme-img1.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center right;
 }
+
 .png2 {
   padding: 2em;
   background-image: url("img/aboutme-img2.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center left;
+}
+
+/* style the images of live project demo */
+
+.project-placeholder img {
+  width: auto;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.project-description {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 1.5em;
 }
