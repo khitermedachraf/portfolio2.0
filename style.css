@@ -249,13 +249,15 @@ p {
   position: relative;
 }
 
-.aboutme-img1 {
-  position: absolute;
-  top: -50px;
-  right: 0;
+.png1 {
+  padding: 2em;
+  background-image: url("img/aboutme-img1.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
-
-.aboutme-img2 {
-  position: absolute;
-  left: 0;
+.png2 {
+  padding: 2em;
+  background-image: url("img/aboutme-img2.png");
+  background-repeat: no-repeat;
+  background-position: left;
 }
