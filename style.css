@@ -21,6 +21,7 @@ header {
 .flex-div {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -209,7 +210,6 @@ p {
 
 .title-and-tags h3 {
   text-align: center;
-  padding: 2em;
   font-size: x-large;
 }
 
@@ -217,9 +217,21 @@ p {
   text-decoration: none;
   font-size: medium;
   color: #36b37e;
-  padding:12px;
+  padding: 12px;
 
   /* Theme 2 / Neutral 10 */
   background: #fff;
   border-radius: 4px;
+}
+
+.flex-row-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.skill-tags,
+.skill-tags li {
+  margin-top: 2em;
 }
