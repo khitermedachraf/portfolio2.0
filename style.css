@@ -5,7 +5,7 @@ body,
 }
 
 /* Add the background Image */
-main {
+#headline {
   background: #fff;
   background-image: url("img/header-illsutration-mobile@2x.png");
   background-size: cover;
@@ -21,6 +21,7 @@ header {
 .flex-div {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -67,4 +68,219 @@ li {
   text-decoration: none;
   color: #172b4d;
   font-size: x-large;
+}
+
+h1,
+h2 {
+  font-size: xx-large;
+}
+
+p {
+  font-size: large;
+}
+
+/* Add styles to the works section grid-layouts + flexbox  */
+
+#my-works h2 {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.project-placeholder {
+  background: #ebf0ee;
+  height: auto;
+
+  /* Design the grid item */
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: stretch;
+  padding: 0 2px;
+}
+
+.center {
+  display: block;
+  margin: 2em auto;
+}
+
+/* Design the crid container */
+.grid-layout {
+  box-sizing: border-box;
+  width: 75%;
+  margin: 2em auto;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  -ms-grid-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-content: center;
+  align-content: space-around;
+  gap: 1.5em;
+}
+
+.properties {
+  min-width: 318px;
+  height: 222px;
+
+  /* Neutrals/N0 */
+  background: #fff;
+  border-radius: 8px;
+  margin: 2px;
+
+  /* Add flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.properties h3 {
+  text-align: center;
+  font-size: x-large;
+  padding: 0 8px;
+}
+
+.tags a {
+  text-decoration: none;
+  font-size: medium;
+  color: #3a4a42;
+  padding: 8px 12px;
+
+  /* Theme 2 / Neutral 10 */
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
+.see-demo-btn {
+  /* style the button */
+  border: 0;
+  padding: 12px;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: 48px;
+
+  /* Theme 2 / Primary 2 */
+  background: #36b37f;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
+
+.tags a :hover {
+  cursor: pointer;
+}
+
+/* Add styles to the about me section grid-layouts + flexbox  */
+
+#about-me h2 {
+  text-align: center;
+  margin: 1em;
+  font-size: 250%;
+}
+
+#about-me p {
+  text-align: center;
+  margin: 1em;
+  font-size: x-large;
+}
+
+#about-me button {
+  display: block;
+  margin: 1em auto;
+}
+
+.skill-placeholder {
+  height: 350px;
+  background: #ebf0ee;
+
+  /* Design the grid item */
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 2px;
+}
+
+.title-and-tags h3 {
+  text-align: center;
+  font-size: x-large;
+}
+
+.title-and-tags a {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+  color: #36b37e;
+  padding: 12px;
+
+  /* Theme 2 / Neutral 10 */
+  background: #fff;
+  border-radius: 4px;
+}
+
+.see-demo-btn:hover {
+  cursor: pointer;
+  background: #3ec48c;
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.see-demo-btn:focus {
+  cursor: pointer;
+  background: #01a566;
+}
+
+.flex-row-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-tags,
+.skill-tags li {
+  margin-top: 2em;
+}
+
+#about-me {
+  position: relative;
+}
+
+/* Add and fix pngs to the background */
+.png1 {
+  padding: 2em;
+  background-image: url("img/aboutme-img1.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.png2 {
+  padding: 2em;
+  background-image: url("img/aboutme-img2.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+/* style the images of live project demo */
+
+.project-placeholder img {
+  width: auto;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.project-description {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 1.5em;
 }
