@@ -231,7 +231,7 @@ p {
 .see-demo-btn:hover {
   cursor: pointer;
   background: #3ec48c;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .see-demo-btn:focus {
