@@ -284,3 +284,9 @@ p {
   font-weight: 500;
   padding-bottom: 1.5em;
 }
+
+form input,form textarea {
+  display: block;
+
+
+}
