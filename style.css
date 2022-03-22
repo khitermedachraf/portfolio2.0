@@ -158,6 +158,9 @@ p {
   border-radius: 4px;
 }
 
+.tags li {
+  padding: 1em 0;
+}
 .see-demo-btn {
   /* style the button */
   border: 0;
