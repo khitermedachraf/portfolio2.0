@@ -161,6 +161,7 @@ p {
 .tags li {
   padding: 1em 0;
 }
+
 .see-demo-btn {
   /* style the button */
   border: 0;
@@ -390,16 +391,19 @@ form {
   /* WebKit, Blink, Edge */
   color: black;
 }
-.change:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: black;
-  opacity: 1;
-}
+
 .change::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: black;
   opacity: 1;
 }
+
+.change:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+
 .change:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: black;
