@@ -383,3 +383,24 @@ form {
   position: absolute;
   right: 0;
 }
+
+/* change color of the textarea placeholder */
+
+.change::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: black;
+}
+.change:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+.change::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+.change:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
