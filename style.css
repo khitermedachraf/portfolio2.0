@@ -368,3 +368,8 @@ form button {
   margin-top: 5em;
   margin-bottom: 1em;
 }
+
+form img {
+  position: absolute;
+  right: 0;
+}
