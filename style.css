@@ -294,7 +294,7 @@ form textarea {
   padding: 1em;
   margin: 2em 1em;
   width: 80%;
-  /* outline: none; */
+  outline: none;
   border: 1px solid #d0d9d4;
 }
 
@@ -360,10 +360,11 @@ form button {
   text-align: center;
   /* Neutrals/N500 */
   color: #42526e;
+  margin-top: 1em;
   margin-bottom: 3em;
 }
 
-.end-shape{
-  
-  margin-top:5em;
+.end-shape {
+  margin-top: 5em;
+  margin-bottom: 1em;
 }
