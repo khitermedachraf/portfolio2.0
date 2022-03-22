@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 body,
 * {
   margin: 0;
@@ -116,8 +117,8 @@ p {
   margin: 2em auto;
   display: grid;
   display: -ms-grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   -ms-grid-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   justify-content: center;
   align-content: space-around;
   gap: 1.5em;
@@ -302,6 +303,7 @@ form input:focus,
 form textarea:focus {
   border: 1px solid #60c095;
 }
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -309,21 +311,24 @@ form textarea:focus {
   justify-content: space-between;
 }
 
-.contact-section h2 {
+#contact-section h2 {
   text-align: center;
   font-weight: bold;
   padding: 2em 1em;
 }
+
 form {
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 300px;
 }
-form button {
+
+#form button {
   display: block;
   margin: 0 auto;
 }
+
 .form-btn {
   /* style the button */
   border: 0;
@@ -352,12 +357,14 @@ form button {
   background: #01a566;
 }
 
-.contact-section p {
+#contact-section p {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
+
   /* or 160% */
   text-align: center;
+
   /* Neutrals/N500 */
   color: #42526e;
   margin-top: 1em;
@@ -369,7 +376,7 @@ form button {
   margin-bottom: 1em;
 }
 
-form img {
+#form img {
   position: absolute;
   right: 0;
 }
