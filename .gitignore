@@ -105,3 +105,6 @@ dist
 
 # ignore nodes files
 node_modules/
+
+# ignore .vscode files
+.vscode

@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 body,
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 /* Add the background Image */
@@ -114,8 +117,8 @@ p {
   margin: 2em auto;
   display: grid;
   display: -ms-grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   -ms-grid-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   justify-content: center;
   align-content: space-around;
   gap: 1.5em;
@@ -153,6 +156,10 @@ p {
   /* Theme 2 / Neutral 10 */
   background: #ebf0ee;
   border-radius: 4px;
+}
+
+.tags li {
+  padding: 1em 0;
 }
 
 .see-demo-btn {
@@ -283,4 +290,121 @@ p {
   text-align: center;
   font-weight: 500;
   padding-bottom: 1.5em;
+}
+
+/* styling the contact form */
+form input,
+form textarea {
+  display: block;
+  padding: 1em;
+  margin: 2em 1em;
+  width: 80%;
+  outline: none;
+  border: 1px solid #d0d9d4;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #60c095;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-section h2 {
+  text-align: center;
+  font-weight: bold;
+  padding: 2em 1em;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+#form button {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-btn {
+  /* style the button */
+  border: 0;
+  padding: 12px;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: 48px;
+
+  /* Theme 2 / Primary 2 */
+  background: #36b37f;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  background: #3ec48c;
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.form-btn:focus {
+  cursor: pointer;
+  background: #01a566;
+}
+
+#contact-section p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+
+  /* or 160% */
+  text-align: center;
+
+  /* Neutrals/N500 */
+  color: #42526e;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.end-shape {
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+
+#form img {
+  position: absolute;
+  right: 0;
+}
+
+/* change color of the textarea placeholder */
+
+.change::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: black;
+}
+
+.change::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+
+.change:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+
+.change:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
 }
