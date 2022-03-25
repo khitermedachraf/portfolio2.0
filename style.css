@@ -459,6 +459,7 @@ form {
   #headline {
     background-image: url("img/desktop-bg/Header-llustration.png");
     background-size: 100% 100%;
+    padding: 1em 10em;
   }
 
   /* style the navbar */
@@ -478,5 +479,18 @@ form {
 
   .only-desktop {
     display: block;
+  }
+
+  .primary > h1 {
+    font-size: 275%;
+  }
+
+  .supporting-text > p {
+    font-size: 150%;
+  }
+
+  .disabled-btn {
+    padding-top: 2em;
+    padding-bottom: 7em;
   }
 }
