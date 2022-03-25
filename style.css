@@ -12,6 +12,7 @@ body,
   justify-content: space-between;
   align-items: center;
 }
+
 /* Add the background Image */
 #headline {
   background: #fff;
@@ -100,8 +101,9 @@ p {
 
 .project-placeholder {
   background: #ebf0ee;
-  height: fit-content;
+  height: auto;
   margin: 10px;
+
   /* Design the grid item */
   border: 2px solid #d0d9d4;
   border-radius: 8px;
@@ -135,7 +137,7 @@ p {
 
 .properties {
   min-width: 318px;
-  height: fit-content;
+  height: auto;
 
   /* Neutrals/N0 */
   background: #fff;
@@ -213,9 +215,10 @@ p {
 }
 
 .skill-placeholder {
-  height: fit-content;
+  height: auto;
   background: #ebf0ee;
   margin: 15px;
+
   /* Design the grid item */
   border: 2px solid #d0d9d4;
   border-radius: 8px;
