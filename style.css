@@ -97,7 +97,6 @@ p {
 }
 
 /* Add styles to the works section grid-layouts + flexbox  */
-
 #my-works h2 {
   text-align: center;
   margin-top: 1em;
@@ -125,7 +124,7 @@ p {
   margin: 2em auto;
 }
 
-/* Design the crid container */
+/* Design the grid container for works section */
 .grid-layout {
   box-sizing: border-box;
   width: 75%;
@@ -153,7 +152,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   text-align: center;
 }
 
@@ -161,6 +160,7 @@ p {
   text-align: center;
   font-size: x-large;
   padding: 0 8px;
+  margin: 0;
 }
 
 .tags a {
@@ -174,6 +174,9 @@ p {
   border-radius: 4px;
 }
 
+ul.tags {
+  margin: 0;
+}
 .tags li {
   padding: 1em 0;
 }
@@ -307,7 +310,6 @@ p {
 .project-description {
   text-align: center;
   font-weight: 500;
-  padding-bottom: 1.5em;
 }
 
 /* styling the contact form */
@@ -492,5 +494,16 @@ form {
   .disabled-btn {
     padding-top: 2em;
     padding-bottom: 7em;
+  }
+
+  /* Design the grid container for works section */
+  .grid-layout {
+    width: 95%;
+    margin: 2em;
+    -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-content: space-around;
+    gap: 5px;
   }
 }
