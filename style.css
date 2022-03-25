@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-body,
-* {
+body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
@@ -421,4 +420,26 @@ form {
 .change:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: black;
+}
+
+/* Use media queries to make my desktop version look like the templateIn figma 
+(Desktop: 768px or wider). */
+@media only screen and (min-width: 768px) {
+  /* Standard CSS rules */
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  /* Hide the header menu button and welcome logo */
+  header > a,
+  header > img {
+    display: none;
+  }
+
+
 }
