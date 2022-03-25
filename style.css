@@ -65,6 +65,11 @@ ul.flex-div {
   padding-top: 1.5em;
 }
 
+.supporting-text > p {
+  font-size: larger;
+  font-weight: 500;
+}
+
 .disabled-btn {
   padding-top: 6em;
 }
@@ -422,6 +427,11 @@ form {
   color: black;
 }
 
+/* Hide desktop version element */
+.only-desktop {
+  display: none;
+}
+
 /* Use media queries to make my desktop version look like the templateIn figma 
 (Desktop: 768px or wider). */
 @media only screen and (min-width: 768px) {
@@ -441,5 +451,32 @@ form {
     display: none;
   }
 
+  header {
+    padding: 0;
+  }
 
+  /* Add the headline background  */
+  #headline {
+    background-image: url("img/desktop-bg/Header-llustration.png");
+    background-size: 100% 100%;
+  }
+
+  /* style the navbar */
+  nav {
+    margin-top: -1em;
+  }
+  nav a {
+    text-decoration: none;
+    color: #172b4d;
+    font-size: large;
+    font-weight: 550;
+  }
+
+  nav a:focus {
+    color: #008552;
+  }
+
+  .only-desktop {
+    display: block;
+  }
 }
