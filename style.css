@@ -3,15 +3,21 @@
 body,
 * {
   margin: 0;
-  padding: 0;
   font-family: "Inter", sans-serif;
+}
+
+/* Add flexbox row to the header */
+.flex-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Add the background Image */
 #headline {
   background: #fff;
   background-image: url("img/header-illsutration-mobile@2x.png");
-  background-size: cover;
+  background-size: 100% 100%;
   padding: 1.5em;
 }
 
@@ -26,7 +32,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* Add styles to the headline section */
@@ -50,6 +56,10 @@ header {
 .primary,
 .social-media-icons {
   padding-top: 3em;
+}
+
+ul.flex-div {
+  padding-left: 0;
 }
 
 .supporting-text {
@@ -92,6 +102,7 @@ p {
 .project-placeholder {
   background: #ebf0ee;
   height: auto;
+  margin: 10px;
 
   /* Design the grid item */
   border: 2px solid #d0d9d4;
@@ -100,7 +111,7 @@ p {
   /* Auto layout */
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-around;
   align-items: stretch;
   padding: 0 2px;
 }
@@ -126,12 +137,13 @@ p {
 
 .properties {
   min-width: 318px;
-  height: 222px;
+  height: auto;
 
   /* Neutrals/N0 */
   background: #fff;
   border-radius: 8px;
   margin: 2px;
+  padding-bottom: 15px;
 
   /* Add flexbox */
   display: flex;
@@ -203,8 +215,9 @@ p {
 }
 
 .skill-placeholder {
-  height: 350px;
+  height: auto;
   background: #ebf0ee;
+  margin: 15px;
 
   /* Design the grid item */
   border: 2px solid #d0d9d4;
@@ -257,6 +270,7 @@ p {
 .skill-tags,
 .skill-tags li {
   margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 #about-me {
@@ -325,7 +339,7 @@ form {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 300px;
+  max-width: 360px;
 }
 
 #form button {
