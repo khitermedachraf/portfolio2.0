@@ -578,4 +578,9 @@ form {
   .project-placeholder img:hover {
     transform: scale(1.05);
   }
+  /* moves slightly the contact form description to the right when the user hovers it */
+  .contact-description:hover {
+    transform: translate(1em);
+    transition: 1.5s;
+  }
 }
