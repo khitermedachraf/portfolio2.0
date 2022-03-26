@@ -161,7 +161,7 @@ h2 {
 
 .tags a {
   text-decoration: none;
-  font-size:small;
+  font-size: small;
   color: #3a4a42;
   padding: 6px 6px;
 
@@ -242,10 +242,10 @@ ul.tags {
 
 .title-and-tags a {
   text-decoration: none;
-  font-size: medium;
+  font-size: small;
   font-weight: bold;
   color: #36b37e;
-  padding: 12px;
+  padding: 6px;
 
   /* Theme 2 / Neutral 10 */
   background: #fff;
@@ -271,10 +271,16 @@ ul.tags {
   justify-content: center;
 }
 
-.skill-tags,
-.skill-tags li {
-  margin-top: 2em;
-  margin-bottom: 1em;
+ul.skill-tags {
+  padding: 0;
+}
+
+.skill-tags {
+  margin: 2em 0;
+}
+
+.skill-tags > li {
+  margin-top: 1em;
 }
 
 #about-me {
