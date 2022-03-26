@@ -197,7 +197,6 @@ ul.tags {
 
 .tags a :hover {
   cursor: pointer;
-
 }
 
 /* Add styles to the about me section grid-layouts + flexbox  */
@@ -257,7 +256,7 @@ ul.tags {
   cursor: pointer;
   background: #3ec48c;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
-  transition: 0.75s
+  transition: 0.75s;
 }
 
 .see-demo-btn:focus {
@@ -374,7 +373,7 @@ form {
   cursor: pointer;
   background: #3ec48c;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
-  transition: 0.75s
+  transition: 0.75s;
 }
 
 .form-btn:focus {
@@ -568,17 +567,15 @@ form {
 
   /* Add background PNGs to contact form */
   #contact-section {
-    background-image:
-      url("img/desktop-bg/contact-form-illustration1.png"),
+    background-image: url("img/desktop-bg/contact-form-illustration1.png"),
       url("img/desktop-bg/contact-form-illustration2.png"),
       url("img/desktop-bg/contact-form-illustration3.png");
     background-repeat: no-repeat;
     background-position: left 325px, 200px 385px, right 280px;
     background-size: 130px;
   }
+
   .project-placeholder img:hover {
-    transform:scale(1.1);
+    transform: scale(1.05);
   }
-
 }
-
