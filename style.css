@@ -526,4 +526,9 @@ form {
     background-image: url("img/desktop-bg/about-me-illustration2.png");
     background-size: 20%;
   }
+
+  /* Creat this class to remove elements which doesn't have to be in the desktop version.*/
+  .only-mobile {
+    display: none;
+  }
 }
