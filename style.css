@@ -256,6 +256,7 @@ ul.tags {
   cursor: pointer;
   background: #3ec48c;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  transition: 0.75s;
 }
 
 .see-demo-btn:focus {
@@ -372,6 +373,7 @@ form {
   cursor: pointer;
   background: #3ec48c;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+  transition: 0.75s;
 }
 
 .form-btn:focus {
@@ -572,5 +574,20 @@ form {
     background-repeat: no-repeat;
     background-position: left 325px, 200px 385px, right 280px;
     background-size: 130px;
+  }
+
+  .project-placeholder img:hover {
+    transform: scale(1.05);
+  }
+
+  /* moves slightly the contact form description to the right when the user hovers it */
+  .contact-description:hover {
+    transform: translate(1em);
+    transition: 1.5s;
+  }
+
+  .flex-row-header > li:hover {
+    transform: rotate(360deg);
+    transition: 1.5s;
   }
 }
