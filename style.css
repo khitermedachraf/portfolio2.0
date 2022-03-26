@@ -92,10 +92,6 @@ h2 {
   font-size: xx-large;
 }
 
-p {
-  font-size: large;
-}
-
 /* Add styles to the works section grid-layouts + flexbox  */
 #my-works h2 {
   text-align: center;
@@ -177,6 +173,7 @@ p {
 ul.tags {
   margin: 0;
 }
+
 .tags li {
   padding: 1em 0;
 }
@@ -434,7 +431,7 @@ form {
   display: none;
 }
 
-/* Use media queries to make my desktop version look like the templateIn figma 
+/* Use media queries to make my desktop version look like the templateIn figma
 (Desktop: 768px or wider). */
 @media only screen and (min-width: 768px) {
   /* Standard CSS rules */
@@ -443,10 +440,11 @@ form {
   }
 
   *,
-  *:before,
-  *:after {
+  *::before,
+  *::after {
     box-sizing: inherit;
   }
+
   /* Hide the header menu button and welcome logo */
   header > a,
   header > img {
@@ -468,6 +466,7 @@ form {
   nav {
     margin-top: -1em;
   }
+
   nav a {
     text-decoration: none;
     color: #172b4d;
@@ -527,10 +526,11 @@ form {
     background-size: 20%;
   }
 
-  /* Creat this class to remove elements which doesn't have to be in the desktop version.*/
+  /* Creat this class to remove elements which doesn't have to be in the desktop version. */
   .only-mobile {
     display: none;
   }
+
   /* make the form side by side with the description */
   .contact-section {
     display: block;
@@ -542,6 +542,7 @@ form {
     width: 40%;
     margin-left: 1em;
   }
+
   form {
     float: left;
     margin-right: 1em;
@@ -564,7 +565,8 @@ form {
   .contact-png {
     clear: both;
     height: 18em;
-    background-image: url("img/desktop-bg/contact-form-illustration1.png"),
+    background-image:
+      url("img/desktop-bg/contact-form-illustration1.png"),
       url("img/desktop-bg/contact-form-illustration2.png"),
       url("img/desktop-bg/contact-form-illustration3.png");
     background-repeat: no-repeat;
