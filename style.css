@@ -576,4 +576,9 @@ form {
     background-position: left 325px, 200px 385px, right 280px;
     background-size: 130px;
   }
+  .project-placeholder img:hover {
+    transform:scale(1.1);
+  }
+
 }
+
