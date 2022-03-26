@@ -552,12 +552,23 @@ form {
     width: 100%;
   }
 
-  .social-media-icons {
-    clear: both;
+  #form button {
+    margin-left: 12px;
   }
 
-  #form button{
-    margin-left: 10px;
+  .contact-section > .social-media-icons {
+    padding-top: 0;
   }
- 
+
+  /* Add background PNGs to contact form */
+  .contact-png {
+    clear: both;
+    height: 18em;
+    background-image: url("img/desktop-bg/contact-form-illustration1.png"),
+      url("img/desktop-bg/contact-form-illustration2.png"),
+      url("img/desktop-bg/contact-form-illustration3.png");
+    background-repeat: no-repeat;
+    background-position: bottom left, 200px 100px, bottom right;
+    background-size: 10%, 8%;
+  }
 }
