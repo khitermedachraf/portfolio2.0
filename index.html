@@ -16,6 +16,13 @@
     </header>
     <main>
       <section id="headline" class="headline-section flex-column">
+        <nav class="only-desktop">
+          <ul class="flex-row-header">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
         <div class="primary">
           <h1 class="dark-blue">
             Hey there. I’m Achraf KHITER
@@ -80,12 +87,9 @@
           <div class="project-placeholder">
             <img src="img/demoProject.png" alt="project demo img" />
             <div class="properties">
-              <h3 class="project-title .dark-blue">
+              <h3 class="project-title dark-blue">
                 Multi-Post Stories Gain+Glory
               </h3>
-              <p class="project-description dark-blue">
-                This is my project description, using the P Tag.
-              </p>
               <ul class="flex-div tags">
                 <li><a href="#">Ruby on rails</a></li>
                 <li><a href="#">css</a></li>
@@ -101,9 +105,6 @@
               <h3 class="project-title .dark-blue">
                 Multi-Post Stories Gain+Glory
               </h3>
-              <p class="project-description dark-blue">
-                This is my project description, using the P Tag.
-              </p>
               <ul class="flex-div tags">
                 <li><a href="#">Ruby on rails</a></li>
                 <li><a href="#">css</a></li>
@@ -119,9 +120,6 @@
               <h3 class="project-title .dark-blue">
                 Multi-Post Stories Gain+Glory
               </h3>
-              <p class="project-description dark-blue">
-                This is my project description, using the P Tag.
-              </p>
               <ul class="flex-div tags">
                 <li><a href="#">Ruby on rails</a></li>
                 <li><a href="#">css</a></li>
@@ -257,10 +255,15 @@
             class="change"
             required
           ></textarea>
-          <img src="img/contact-form-png.svg" alt="just background png" />
+          <img
+            src="img/contact-form-png.svg"
+            alt="just background png"
+            class="only-mobile"
+          />
           <button type="submit" class="form-btn">Get in touch</button>
         </form>
         <div class="social-media-icons">
+          <hr />
           <ul class="flex-div">
             <li>
               <a href="#"> <img src="img/Icons/twitter.svg" alt="" /></a>
@@ -279,8 +282,8 @@
             </li>
           </ul>
         </div>
-        <p>khiter.med7@gmail.com</p>
-        <img src="img/Shape.png" class="end-shape" alt="" />
+        <p class="only-mobile">khiter.med7@gmail.com</p>
+        <img src="img/Shape.png" class="end-shape only-mobile" alt="" />
       </section>
     </main>
   </body>

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-body,
-* {
+body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
@@ -66,6 +65,11 @@ ul.flex-div {
   padding-top: 1.5em;
 }
 
+.supporting-text > p {
+  font-size: larger;
+  font-weight: 500;
+}
+
 .disabled-btn {
   padding-top: 6em;
 }
@@ -88,12 +92,7 @@ h2 {
   font-size: xx-large;
 }
 
-p {
-  font-size: large;
-}
-
 /* Add styles to the works section grid-layouts + flexbox  */
-
 #my-works h2 {
   text-align: center;
   margin-top: 1em;
@@ -121,7 +120,7 @@ p {
   margin: 2em auto;
 }
 
-/* Design the crid container */
+/* Design the grid container for works section */
 .grid-layout {
   box-sizing: border-box;
   width: 75%;
@@ -149,7 +148,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   text-align: center;
 }
 
@@ -157,17 +156,22 @@ p {
   text-align: center;
   font-size: x-large;
   padding: 0 8px;
+  margin: 0;
 }
 
 .tags a {
   text-decoration: none;
-  font-size: medium;
+  font-size: small;
   color: #3a4a42;
-  padding: 8px 12px;
+  padding: 6px 6px;
 
   /* Theme 2 / Neutral 10 */
   background: #ebf0ee;
-  border-radius: 4px;
+  border-radius: 5px;
+}
+
+ul.tags {
+  margin: 0;
 }
 
 .tags li {
@@ -238,10 +242,10 @@ p {
 
 .title-and-tags a {
   text-decoration: none;
-  font-size: medium;
+  font-size: small;
   font-weight: bold;
   color: #36b37e;
-  padding: 12px;
+  padding: 6px;
 
   /* Theme 2 / Neutral 10 */
   background: #fff;
@@ -267,10 +271,16 @@ p {
   justify-content: center;
 }
 
-.skill-tags,
-.skill-tags li {
-  margin-top: 2em;
-  margin-bottom: 1em;
+ul.skill-tags {
+  padding: 0;
+}
+
+.skill-tags {
+  margin: 2em 0;
+}
+
+.skill-tags > li {
+  margin-top: 1em;
 }
 
 #about-me {
@@ -298,12 +308,6 @@ p {
   width: auto;
   padding: 3px;
   border-radius: 5px;
-}
-
-.project-description {
-  text-align: center;
-  font-weight: 500;
-  padding-bottom: 1.5em;
 }
 
 /* styling the contact form */
@@ -339,7 +343,7 @@ form {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 360px;
+  max-width: 440px;
 }
 
 #form button {
@@ -421,4 +425,152 @@ form {
 .change:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: black;
+}
+
+/* Hide desktop version element */
+.only-desktop {
+  display: none;
+}
+
+/* Use media queries to make my desktop version look like the templateIn figma
+(Desktop: 768px or wider). */
+@media only screen and (min-width: 768px) {
+  /* Standard CSS rules */
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  /* Hide the header menu button and welcome logo */
+  header > a,
+  header > img {
+    display: none;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  /* Add the headline background  */
+  #headline {
+    background-image: url("img/desktop-bg/Header-llustration.png");
+    background-size: 100% 100%;
+    padding: 1em 10em;
+  }
+
+  /* style the navbar */
+  nav {
+    margin-top: -1em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #172b4d;
+    font-size: large;
+    font-weight: 550;
+  }
+
+  nav a:focus {
+    color: #008552;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
+  .primary > h1 {
+    font-size: 275%;
+  }
+
+  .supporting-text > p {
+    font-size: 150%;
+  }
+
+  .disabled-btn {
+    padding-top: 2em;
+    padding-bottom: 7em;
+  }
+
+  /* Design the grid container for works section */
+  .grid-layout {
+    width: 95%;
+    margin: 2em;
+    -ms-grid-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 5px;
+  }
+
+  /* Add and fix pngs to the background */
+  .png1 {
+    background-image: url("img/desktop-bg/about-me-illustration1.png");
+    background-size: 100%;
+    background-position-y: -15px;
+  }
+
+  .png1 + h2 {
+    padding: 0;
+  }
+
+  #about-me > p {
+    text-align: center;
+    padding: 0 5em;
+    margin: 0;
+  }
+
+  .png2 {
+    background-image: url("img/desktop-bg/about-me-illustration2.png");
+    background-size: 20%;
+  }
+
+  /* Creat this class to remove elements which doesn't have to be in the desktop version. */
+  .only-mobile {
+    display: none;
+  }
+
+  /* make the form side by side with the description */
+  .contact-section {
+    display: block;
+    padding-top: 2em;
+  }
+
+  #contact-section h2 {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+
+  form {
+    float: left;
+    margin-right: 1em;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  #form button {
+    margin-left: 12px;
+  }
+
+  .contact-section > .social-media-icons {
+    clear: both;
+    padding-top: 5em;
+  }
+
+  /* Add background PNGs to contact form */
+  #contact-section {
+    background-image:
+      url("img/desktop-bg/contact-form-illustration1.png"),
+      url("img/desktop-bg/contact-form-illustration2.png"),
+      url("img/desktop-bg/contact-form-illustration3.png");
+    background-repeat: no-repeat;
+    background-position: left 325px, 200px 385px, right 280px;
+    background-size: 130px;
+  }
 }
