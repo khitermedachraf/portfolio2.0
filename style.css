@@ -345,7 +345,7 @@ form {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 360px;
+  max-width: 400px;
 }
 
 #form button {
@@ -530,5 +530,29 @@ form {
   /* Creat this class to remove elements which doesn't have to be in the desktop version.*/
   .only-mobile {
     display: none;
+  }
+  /* make the form side by side with the description */
+  .contact-section {
+    display: block;
+    padding-top: 2em;
+  }
+
+  #contact-section h2 {
+    float: left;
+    width: 40%;
+    margin-left: 1em;
+  }
+  form {
+    float: left;
+    margin-right: 1em;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  .social-media-icons {
+    clear: both;
   }
 }
