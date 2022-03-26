@@ -500,8 +500,8 @@ form {
   .grid-layout {
     width: 95%;
     margin: 2em;
-    -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 5px;
   }
 
