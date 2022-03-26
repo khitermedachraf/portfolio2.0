@@ -502,8 +502,28 @@ form {
     margin: 2em;
     -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
-    align-content: space-around;
     gap: 5px;
+  }
+
+  /* Add and fix pngs to the background */
+  .png1 {
+    background-image: url("img/desktop-bg/about-me-illustration1.png");
+    background-size: 100%;
+    background-position-y: -15px;
+  }
+
+  .png1 + h2 {
+    padding: 0;
+  }
+
+  #about-me > p {
+    text-align: center;
+    padding: 0 5em;
+    margin: 0;
+  }
+
+  .png2 {
+    background-image: url("img/desktop-bg/about-me-illustration2.png");
+    background-size: 20%;
   }
 }
