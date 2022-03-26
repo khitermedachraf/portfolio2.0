@@ -555,4 +555,9 @@ form {
   .social-media-icons {
     clear: both;
   }
+
+  #form button{
+    margin-left: 10px;
+  }
+ 
 }
