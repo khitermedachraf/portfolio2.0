@@ -348,7 +348,7 @@ form {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 400px;
+  max-width: 425px;
 }
 
 #form button {
@@ -546,7 +546,7 @@ form {
   #contact-section h2 {
     float: left;
     width: 40%;
-    margin-left: 1em;
+    text-align: left;
   }
 
   form {
@@ -564,18 +564,17 @@ form {
   }
 
   .contact-section > .social-media-icons {
-    padding-top: 0;
+    clear: both;
+    padding-top: 5em;
   }
 
   /* Add background PNGs to contact form */
-  .contact-png {
-    clear: both;
-    height: 18em;
+  #contact-section {
     background-image: url("img/desktop-bg/contact-form-illustration1.png"),
       url("img/desktop-bg/contact-form-illustration2.png"),
       url("img/desktop-bg/contact-form-illustration3.png");
     background-repeat: no-repeat;
-    background-position: bottom left, 200px 100px, bottom right;
-    background-size: 10%, 8%;
+    background-position: left 325px, 200px 385px, right 280px;
+    background-size: 120px;
   }
 }
