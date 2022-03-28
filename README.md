@@ -4,6 +4,10 @@
 
 > Description: This is a professional project with Micoverse, This project was built to show My professional work and projects as a full-stack web developer.
 
+## Deployment
+
+- The Link:  [Achraf's Portfolio](https://khitermedachraf.github.io/my-professional-portfolio/)
+
 ## Built With
 
 - HTML5
@@ -45,9 +49,9 @@ Learn more about [Live Server](https://marketplace.visualstudio.com/items?itemNa
 
 👤 **Author1**
 
+- LinkedIn: [khitermed](https://www.linkedin.com/in/khitermed/)
 - GitHub: [@khitermedachraf](https://github.com/khitermedachraf)
 - Twitter: [@@AchrafKhiter](https://twitter.com/AchrafKhiter)
-- LinkedIn: [khitermed](https://www.linkedin.com/in/khitermed/)
 
 ## 🤝 Contributing
 
@@ -58,10 +62,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Deployment
-
-- Coming later using GitHub Pages.
 
 ## Acknowledgments
 
