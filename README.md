@@ -6,7 +6,7 @@
 
 ## Deployment
 
-- This is the Link:  [Achraf's Portfolio](https://khitermedachraf.github.io/my-professional-portfolio/)
+- The Link:  [Achraf's Portfolio](https://khitermedachraf.github.io/my-professional-portfolio/)
 
 ## Built With
 
