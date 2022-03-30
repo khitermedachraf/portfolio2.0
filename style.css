@@ -306,7 +306,8 @@ ul.skill-tags {
 /* style the images of live project demo */
 
 .project-placeholder img {
-  width: auto;
+  width: 100%;
+  height: auto;
   padding: 3px;
   border-radius: 5px;
 }
