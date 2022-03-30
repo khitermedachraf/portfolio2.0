@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# **_my-professional-repository_** project
+# **_my-professional-portfolio_** project
 
 > Description: This is a professional project with Micoverse, This project was built to show My professional work and projects as a full-stack web developer.
 
