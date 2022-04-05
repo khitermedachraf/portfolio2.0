@@ -435,6 +435,41 @@ form {
   display: none;
 }
 
+/* Style the mobile-menu */
+#mobile-menu {
+  height: 85vh;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  margin-bottom: 2em;
+  mix-blend-mode: normal;
+  box-shadow: 0 1em 1em rgba(37, 47, 137, 0.08);
+}
+
+.fa-times {
+  float: right;
+  margin: 1.5em;
+  font-size: larger;
+  color: #67798e;
+}
+
+#mobile-menu > ul {
+  clear: right;
+  padding-left: 0;
+}
+
+.menu-link {
+  display: block;
+  text-decoration: none;
+  margin: 1em 1em;
+  color: #3a4a42;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Use media queries to make my desktop version look like the templateIn figma
 (Desktop: 768px or wider). */
 @media only screen and (min-width: 768px) {

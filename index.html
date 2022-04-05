@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content=" Achraf KHITER Portfolio." />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Achraf's Portfolio</title>
   </head>
 
-  <body>
-    <header class="flex-row-header">
+  <body id="body">
+    <header class="flex-row-header" id="header">
       <a href="#" class="logo">Welcome</a>
-      <img src="img/Icons/Union.png" alt="menu button" />
+      <img src="img/Icons/Union.png" alt="menu button" id="menu-btn" />
     </header>
+    <div id="mobile-menu" class="only-mobile hidden">
+      <span
+        ><a href="#"><i class="fas fa-times" id="close"></i></a
+      ></span>
+      <ul>
+        <li><a href="#my-works" class="menu-link">Portfolio</a></li>
+        <li><a href="#about-me" class="menu-link">About</a></li>
+        <li><a href="#contact-section" class="menu-link">Contact</a></li>
+      </ul>
+    </div>
     <main>
       <section id="headline" class="headline-section flex-column">
         <nav class="only-desktop">
@@ -297,5 +313,6 @@
         <img src="img/Shape.png" class="end-shape only-mobile" alt="" />
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
