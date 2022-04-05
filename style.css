@@ -451,11 +451,13 @@ form {
 
 #mobile-menu > ul {
   clear: right;
-  color: #3a4a42;
 }
 
-#mobile-menu > ul > li {
+.menu-link {
+  display: block;
+  text-decoration: none;
   margin: 1em 1em;
+  color: #3a4a42;
   font-size: x-large;
   font-weight: 700;
 }
@@ -464,7 +466,7 @@ form {
   display: none;
 }
 
-.invisible{
+.invisible {
   visibility: hidden;
 }
 
