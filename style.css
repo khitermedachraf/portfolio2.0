@@ -435,6 +435,31 @@ form {
   display: none;
 }
 
+/* Style the mobile-menu */
+#mobile-menu {
+  height: 85vh;
+  border-radius: 2em;
+}
+
+.fa-times {
+  margin-right: 2em;
+  float: right;
+  margin-bottom: 2em;
+  font-size: larger;
+  color: #67798e;
+}
+
+#mobile-menu > ul {
+  clear: right;
+  color: #3a4a42;
+}
+
+#mobile-menu > ul > li {
+  margin: 1em 1em;
+  font-size: x-large;
+  font-weight: 700;
+}
+
 /* Use media queries to make my desktop version look like the templateIn figma
 (Desktop: 768px or wider). */
 @media only screen and (min-width: 768px) {
@@ -568,8 +593,7 @@ form {
 
   /* Add background PNGs to contact form */
   #contact-section {
-    background-image:
-      url("img/desktop-bg/contact-form-illustration1.png"),
+    background-image: url("img/desktop-bg/contact-form-illustration1.png"),
       url("img/desktop-bg/contact-form-illustration2.png"),
       url("img/desktop-bg/contact-form-illustration3.png");
     background-repeat: no-repeat;
