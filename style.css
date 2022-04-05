@@ -439,6 +439,7 @@ form {
 #mobile-menu {
   height: 85vh;
   border-radius: 2em;
+  border-bottom: 2px solid #67798e;
 }
 
 .fa-times {
