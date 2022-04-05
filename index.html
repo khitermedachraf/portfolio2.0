@@ -16,14 +16,12 @@
   </head>
 
   <body>
-    <header class="flex-row-header">
+    <header class="flex-row-header" id="header">
       <a href="#" class="logo">Welcome</a>
-      <img src="img/Icons/Union.png" alt="menu button" />
+      <img src="img/Icons/Union.png" alt="menu button" id="menu-btn" />
     </header>
-    <div id="mobile-menu" class="only-mobile">
-      <span
-        ><a href="#"><i class="fas fa-times"></i></a
-      ></span>
+    <div id="mobile-menu" class="only-mobile hidden">
+      <span></span><a href="#"><i class="fas fa-times"></i></a></span>
       <ul>
         <li><a href="#my-works"></a>Portfolio</li>
         <li><a href="#about-me"></a>About</li>
@@ -313,5 +311,6 @@
         <img src="img/Shape.png" class="end-shape only-mobile" alt="" />
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
