@@ -85,8 +85,8 @@ function showPopUp(projectNumber) {
 
   document.addEventListener('click', (action) => {
     if (action.target.id === 'close-popUp') {
-  popUp.style.display = 'none';
-  overlay.style.display = 'none';
+      popUp.style.display = 'none';
+      overlay.style.display = 'none';
     }
   });
 }
