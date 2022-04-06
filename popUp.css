@@ -1,52 +1,52 @@
 #overlay {
-   position: fixed;
-   top: 0;
-   bottom: 0;
-   background: #ebf0ee;
-   width: 100vw;
-   height: 108vh;
-   opacity: 0.9;
-   z-index: 100;
-   display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #ebf0ee;
+  width: 100vw;
+  height: 108vh;
+  opacity: 0.9;
+  z-index: 100;
+  display: none;
 }
 
 .popUp {
-    width: 90vw;
-    margin-left: 20px;
-    padding: 8px 0 0 ;
-    font-family: 'inter', sans-serif;
-    border: 1px solid #dfe1e6;
-    box-sizing: border-box;
-    border-radius: 16px;
-    position: fixed;
-    top: 5px;
-    background-color: white;
-    z-index: 200;
+  width: 90vw;
+  margin-left: 20px;
+  padding: 8px 0 0 0;
+  font-family: 'inter', sans-serif;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: fixed;
+  top: 5px;
+  background-color: white;
+  z-index: 200;
 }
 
 .popUp-close {
-    color: white;
-    font-size: 18px;
+  color: white;
+  font-size: 18px;
 }
 
 .popUp-title {
-    width: 259px;
-    font-size: 32px;
-    color: #172b4d;
-    font-weight: bold;
-    margin-top: 2px;
+  width: 259px;
+  font-size: 32px;
+  color: #172b4d;
+  font-weight: bold;
+  margin-top: 2px;
 }
 
 .pop-pDesk {
-    display: none;
-    font-size: 16px;
+  display: none;
+  font-size: 16px;
 }
 
 .popUp-list {
-    display: flex;
-    font-size: 16px;
-    margin-left: -40px;
-    margin-top: -16px;
+  display: flex;
+  font-size: 16px;
+  margin-left: -40px;
+  margin-top: -16px;
 }
 
 .popUp-items {
@@ -57,15 +57,16 @@
 }
 
 .popUp-descr {
-   font-size: 16px;
+  font-size: 16px;
   margin: 0 16px 20px 0;
   color: #344563;
 }
 
 .lateral {
-    padding: 0 0 0 10px;
-    font-family: 'inter', sans-serif;
+  padding: 0 0 0 10px;
+  font-family: 'inter', sans-serif;
 }
+
 .popup-image {
   margin: auto;
   width: 275px;
@@ -102,93 +103,93 @@
 }
 
 @media only screen and (min-width: 768px) {
-   #overlay {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      background: #ebf0ee;
-      width: 100vw;
-      height: 108vh;
-      opacity: 0.99;
-      z-index: 100;
-      display: none;
+  #overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #ebf0ee;
+    width: 100vw;
+    height: 108vh;
+    opacity: 0.99;
+    z-index: 100;
+    display: none;
    }
 
-   .popUp {
-      width: 62vw;
-      z-index: 200;
-      position: fixed;
-      overflow-y: scroll;
-      height: 100vh;
-      margin-left: 20%;
+  .popUp {
+    width: 62vw;
+    z-index: 200;
+    position: fixed;
+    overflow-y: scroll;
+    height: 100vh;
+    margin-left: 20%;
    }
 
   .popUp-close {
-      color: #67798e;
-      margin-top: 4px;
-      background-color: #ebecf0;
-      width: 20px;
-      height: 20px;
-      align-items: center;
-      padding-left: 4px;
+    color: #67798e;
+    margin-top: 4px;
+    background-color: #ebecf0;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    padding-left: 4px;
   }
 
-   .popup-image {
-      background-image: url(./img/Desktop-popup-image.png);
-      background-repeat: no-repeat;
-      width: 800px;
-      height: 600px;
-      margin-top: 30px;
+  .popup-image {
+    background-image: url(./img/Desktop-popup-image.png);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 600px;
+    margin-top: 30px;
    }
 
-   .popUp-title {
-      width: 589px;
-      margin-top: 20px;
+  .popUp-title {
+    width: 589px;
+    margin-top: 20px;
    }
 
-   .desk {
-      display: block;
+  .desk {
+    display: block;
    }
 
-   .popUp-descr {
-      display: none;
+  .popUp-descr {
+    display: none;
    }
 
-   .lateral {
-      display: flex;
-      flex-direction: row; 
+  .lateral {
+    display: flex;
+    lex-direction: row;
    }
 
-   .popUp-btn {
-      margin-top: 24px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-left: -30px;
+  .popUp-btn {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -30px;
    }
 
-   .p-btn {
-      width: 110px;
-      font-size: 14px;
+  .p-btn {
+    width: 110px;
+    font-size: 14px;
    }
 
-   .btn2 {
-      margin-left: 10px; 
+  .btn2 {
+    margin-left: 10px;
    }
 
-   .pop-pDesk {
-      display: block;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      color: #344563;
-      margin: 0 20px 0 12px;
-      padding-bottom: 40px;
-   } 
+  .pop-pDesk {
+    display: block;
+    font-family: 'Inter', sans-derif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #344563;
+    margin: 0 20px 0 12px;
+    padding-bottom: 40px;
+   }
 
    .live {
-       width: 14px;
-       height: 14px;
+     width: 14px;
+     height: 14px;
    }
 }
