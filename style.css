@@ -473,8 +473,6 @@ form {
   display: none;
 }
 
-
-
 /* Use media queries to make my desktop version look like the templateIn figma
 (Desktop: 768px or wider). */
 @media only screen and (min-width: 768px) {
@@ -608,8 +606,7 @@ form {
 
   /* Add background PNGs to contact form */
   #contact-section {
-    background-image:
-      url("img/desktop-bg/contact-form-illustration1.png"),
+    background-image: url("img/desktop-bg/contact-form-illustration1.png"),
       url("img/desktop-bg/contact-form-illustration2.png"),
       url("img/desktop-bg/contact-form-illustration3.png");
     background-repeat: no-repeat;
@@ -634,7 +631,10 @@ form {
 }
 
 #error-message {
+  margin-left: 2em;
+  margin-bottom: 1em;
   color: red;
   font-style: italic;
+  font-size: medium;
   display: none;
 }

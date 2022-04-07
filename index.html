@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content=" Achraf KHITER Portfolio." />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./popUp.css">
+    <link rel="stylesheet" href="./popUp.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -16,8 +16,8 @@
     <title>Achraf's Portfolio</title>
   </head>
   <body id="body">
-  <div id="overlay"></div>
-    <header class="flex-row-header " id="header">
+    <div id="overlay"></div>
+    <header class="flex-row-header" id="header">
       <a href="#" class="logo">Welcome</a>
       <img src="img/Icons/Union.png" alt="menu button" id="menu-btn" />
     </header>
@@ -92,8 +92,7 @@
       <section id="my-works">
         <h2 class="dark-blue">My Recent Works</h2>
         <img src="img/Indicator.png" alt="Indicator" class="center" />
-        <div id="projects-card" class="grid-layout">
-        </div>
+        <div id="projects-card" class="grid-layout"></div>
       </section>
       <section id="about-me">
         <div class="png1">
@@ -189,7 +188,9 @@
             alt="just background png"
             class="only-mobile"
           />
-          <p id="error-message">Invalid Email. Please use lowercase characters.</p>
+          <small id="error-message">
+            Invalid Email. Please use lowercase characters.
+          </small>
           <button type="submit" class="form-btn">Get in touch</button>
         </form>
         <div class="social-media-icons">
@@ -226,7 +227,7 @@
         <img src="img/Shape.png" class="end-shape only-mobile" alt="" />
       </section>
     </main>
-    <script type="module"  src="popUp.js"></script>
-    <script type="module"  src="app.js"></script>
+    <script type="module" src="popUp.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
