@@ -178,7 +178,8 @@ ul.tags {
   padding: 1em 0;
 }
 
-.see-demo-btn {
+.see-demo-btn,
+.get-CV-btn {
   /* style the button */
   border: 0;
   padding: 12px;
@@ -252,14 +253,16 @@ ul.tags {
   border-radius: 4px;
 }
 
-.see-demo-btn:hover {
+.see-demo-btn:hover,
+.get-CV-btn:hover {
   cursor: pointer;
   background: #3ec48c;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
   transition: 0.75s;
 }
 
-.see-demo-btn:focus {
+.see-demo-btn:focus,
+.get-CV-btn:focus {
   cursor: pointer;
   background: #01a566;
 }
@@ -603,8 +606,7 @@ form {
 
   /* Add background PNGs to contact form */
   #contact-section {
-    background-image:
-      url("img/desktop-bg/contact-form-illustration1.png"),
+    background-image: url("img/desktop-bg/contact-form-illustration1.png"),
       url("img/desktop-bg/contact-form-illustration2.png"),
       url("img/desktop-bg/contact-form-illustration3.png");
     background-repeat: no-repeat;

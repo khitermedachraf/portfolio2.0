@@ -1,3 +1,4 @@
+
 const body = document.querySelector('body');
 const overlay = document.getElementById('overlay');
 const workData = [{
@@ -53,6 +54,7 @@ const projectBtn = document.querySelectorAll('.see-demo-btn');
 const popUp = document.createElement('div');
 popUp.classList.add('popUp');
 const btnName = Array.from(projectBtn);
+
 function showPopUp(projectNumber) {
   popUp.style.display = 'block';
   overlay.style.display = 'block';
