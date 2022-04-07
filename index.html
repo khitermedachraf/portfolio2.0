@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content=" Achraf KHITER Portfolio." />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./popUp.css">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -14,9 +15,9 @@
     />
     <title>Achraf's Portfolio</title>
   </head>
-
   <body id="body">
-    <header class="flex-row-header" id="header">
+  <div id="overlay"></div>
+    <header class="flex-row-header " id="header">
       <a href="#" class="logo">Welcome</a>
       <img src="img/Icons/Union.png" alt="menu button" id="menu-btn" />
     </header>
@@ -30,7 +31,7 @@
         <li><a href="#contact-section" class="menu-link">Contact</a></li>
       </ul>
     </div>
-    <main>
+    <main class="stop">
       <section id="headline" class="headline-section flex-column">
         <nav class="only-desktop">
           <ul class="flex-row-header">
@@ -92,96 +93,6 @@
         <h2 class="dark-blue">My Recent Works</h2>
         <img src="img/Indicator.png" alt="Indicator" class="center" />
         <div id="projects-card" class="grid-layout">
-          <div class="project-placeholder">
-            <img src="img/demoProject.png" alt="my first project image" />
-            <div class="properties">
-              <h3 class="project-title .dark-blue">
-                Multi-Post Stories Gain+Glory
-              </h3>
-              <ul class="flex-div tags">
-                <li><a href="#">Ruby on rails</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">html</a></li>
-              </ul>
-              <button type="button" class="see-demo-btn">See Project</button>
-            </div>
-          </div>
-          <div class="project-placeholder">
-            <img src="img/demoProject.png" alt="my project image" />
-            <div class="properties">
-              <h3 class="project-title dark-blue">
-                Multi-Post Stories Gain+Glory
-              </h3>
-              <ul class="flex-div tags">
-                <li><a href="#">Ruby on rails</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">html</a></li>
-              </ul>
-              <button type="button" class="see-demo-btn">See Project</button>
-            </div>
-          </div>
-          <div class="project-placeholder">
-            <img src="img/demoProject.png" alt="my project image" />
-            <div class="properties">
-              <h3 class="project-title .dark-blue">
-                Multi-Post Stories Gain+Glory
-              </h3>
-              <ul class="flex-div tags">
-                <li><a href="#">Ruby on rails</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">html</a></li>
-              </ul>
-              <button type="button" class="see-demo-btn">See Project</button>
-            </div>
-          </div>
-          <div class="project-placeholder">
-            <img src="img/demoProject.png" alt="project demo img" />
-            <div class="properties">
-              <h3 class="project-title .dark-blue">
-                Multi-Post Stories Gain+Glory
-              </h3>
-              <ul class="flex-div tags">
-                <li><a href="#">Ruby on rails</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">html</a></li>
-              </ul>
-              <button type="button" class="see-demo-btn">See Project</button>
-            </div>
-          </div>
-          <div class="project-placeholder">
-            <img src="img/demoProject.png" alt="my project image" />
-            <div class="properties">
-              <h3 class="project-title .dark-blue">
-                Multi-Post Stories Gain+Glory
-              </h3>
-              <ul class="flex-div tags">
-                <li><a href="#">Ruby on rails</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">html</a></li>
-              </ul>
-              <button type="button" class="see-demo-btn">See Project</button>
-            </div>
-          </div>
-          <div class="project-placeholder">
-            <img src="img/demoProject.png" alt="project demo img" />
-            <div class="properties">
-              <h3 class="project-title .dark-blue">
-                Multi-Post Stories Gain+Glory
-              </h3>
-              <ul class="flex-div tags">
-                <li><a href="#">Ruby on rails</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">html</a></li>
-              </ul>
-              <button type="button" class="see-demo-btn">See Project</button>
-            </div>
-          </div>
         </div>
       </section>
       <section id="about-me">
@@ -194,7 +105,7 @@
           you need coded, don't hestiate to contact me.
         </p>
         <div class="png2">
-          <button type="button" class="see-demo-btn">Get My Resume</button>
+          <button type="button" class="get-CV-btn">Get My Resume</button>
         </div>
         <div id="skills-card" class="grid-layout">
           <div class="skill-placeholder">
@@ -313,6 +224,7 @@
         <img src="img/Shape.png" class="end-shape only-mobile" alt="" />
       </section>
     </main>
-    <script src="app.js"></script>
+    <script type="module"  src="popUp.js"></script>
+    <script type="module"  src="app.js"></script>
   </body>
 </html>
