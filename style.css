@@ -606,7 +606,8 @@ form {
 
   /* Add background PNGs to contact form */
   #contact-section {
-    background-image: url("img/desktop-bg/contact-form-illustration1.png"),
+    background-image:
+      url("img/desktop-bg/contact-form-illustration1.png"),
       url("img/desktop-bg/contact-form-illustration2.png"),
       url("img/desktop-bg/contact-form-illustration3.png");
     background-repeat: no-repeat;
