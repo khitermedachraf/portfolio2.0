@@ -1,4 +1,3 @@
-
 const body = document.querySelector('body');
 const overlay = document.getElementById('overlay');
 const workData = [{
@@ -50,10 +49,8 @@ const workData = [{
 
 }];
 
-const projectBtn = document.querySelectorAll('.see-demo-btn');
 const popUp = document.createElement('div');
 popUp.classList.add('popUp');
-const btnName = Array.from(projectBtn);
 
 function showPopUp(projectNumber) {
   popUp.style.display = 'block';
@@ -84,7 +81,6 @@ function showPopUp(projectNumber) {
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias minus autem dolorum? Accusamus dolor sit nesciunt amet facere necessitatibus rem quae officia neque sed, exercitationem provident, impedit modi placeat soluta nemo illo quisquam maiores non dolores quibusdam aliquam aperiam ut.
     </p>
 `;
-
   document.addEventListener('click', (action) => {
     if (action.target.id === 'close-popUp') {
       popUp.style.display = 'none';
@@ -92,9 +88,5 @@ function showPopUp(projectNumber) {
     }
   });
 }
-
-for (let i = 0; i < btnName.length; i += 1) {
-  btnName[i].addEventListener('click', () => {
-    showPopUp(i);
-  });
-}
+// export the function to use after rendering the projects dynamically
+export { showPopUp as default };

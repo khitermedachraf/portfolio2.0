@@ -1,3 +1,6 @@
+import defaultExport from './popUp.js';
+
+const showPopUp = defaultExport;
 // the user clicks (or taps) the hamburger button, the mobile menu appears.
 const menuBtn = document.getElementById('menu-btn');
 const header = document.getElementById('header');
@@ -91,4 +94,13 @@ function displayProject(projectId) {
 
 for (let i = 0; i < projectsData.length; i++) {
   displayProject(i);
+}
+
+// // add eventListener to each project's button to fire the popUp after click.
+const projectsBtn = document.querySelectorAll('.see-demo-btn');
+
+for (let i = 0; i < projectsBtn.length; i += 1) {
+  projectsBtn[i].addEventListener('click', () => {
+    showPopUp(i);
+  });
 }
