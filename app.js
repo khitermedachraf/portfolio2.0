@@ -25,3 +25,43 @@ for (let i = 0; i < menuLi.length; i++) {
     body.style.overflow = 'visible';
   });
 }
+
+// creat the array of project's objects:
+const projectsData = [
+  {
+    image: 'img/demoProject.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    liveLink: 'https://khitermedachraf.github.io/my-professional-portfolio/',
+  },
+  {
+    image: 'img/demoProject.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    liveLink: 'https://khitermedachraf.github.io/my-professional-portfolio/',
+  },
+  {
+    image: 'img/demoProject.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    liveLink: 'https://khitermedachraf.github.io/my-professional-portfolio/',
+  },
+  {
+    image: 'img/demoProject.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    liveLink: 'https://khitermedachraf.github.io/my-professional-portfolio/',
+  },
+  {
+    image: 'img/demoProject.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    liveLink: 'https://khitermedachraf.github.io/my-professional-portfolio/',
+  },
+  {
+    image: 'img/demoProject.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'css', 'Javascript', 'html'],
+    liveLink: 'https://khitermedachraf.github.io/my-professional-portfolio/',
+  },
+];
