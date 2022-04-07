@@ -104,3 +104,21 @@ for (let i = 0; i < projectsBtn.length; i += 1) {
     showPopUp(i);
   });
 }
+
+// FORM VALIDATION for the Email Input
+
+const form = document.getElementById('form');
+
+function isValidated(input) {
+  if (input === input.toLowerCase()) return true;
+  return false;
+}
+
+form.addEventListener('submit', (event) => {
+  const email = document.getElementById('email');
+  if (!isValidated(email.value)) {
+    event.preventDefault();
+    const error = document.getElementById('error-message');
+    error.style.display = 'block';
+  }
+});

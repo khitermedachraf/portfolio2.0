@@ -630,3 +630,12 @@ form {
     transition: 1.5s;
   }
 }
+
+#error-message {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  color: red;
+  font-style: italic;
+  font-size: medium;
+  display: none;
+}
