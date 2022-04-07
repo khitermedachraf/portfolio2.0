@@ -104,3 +104,24 @@ for (let i = 0; i < projectsBtn.length; i += 1) {
     showPopUp(i);
   });
 }
+
+// FORM VALIDATION
+
+const form = document.getElementById('form');
+
+function validating() {
+  const email = document.getElementById('email');
+  const error = document.getElementById('error-message');
+  if(email.value === email.value.toLowerCase()) {
+    return true;
+  }
+  error.style.display = 'block';
+  return false;
+}
+
+form.addEventListener('submit', (event) => {
+  if (!validating()) {
+    event.preventDefault();
+  }
+});
+
