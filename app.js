@@ -182,6 +182,6 @@ const name = document.getElementById('fullname');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 
-name.addEventListener('change', populateStorage);
-email.addEventListener('change', populateStorage);
-message.addEventListener('change', populateStorage);
+name.addEventListener('input', populateStorage);
+email.addEventListener('input', populateStorage);
+message.addEventListener('input', populateStorage);
