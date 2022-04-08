@@ -122,3 +122,66 @@ form.addEventListener('submit', (event) => {
     error.style.display = 'block';
   }
 });
+
+// Implement the local storage logic to store inputs data.
+// function that detects whether localStorage is both supported and available,I took it from MDN.
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22
+      // Firefox
+      || e.code === 1014
+      // test name field too, because code might not be present
+      // everything except Firefox
+      || e.name === 'QuotaExceededError'
+      // Firefox
+      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      // acknowledge QuotaExceededError only if there's something already stored
+      && (storage && storage.length !== 0);
+  }
+}
+// Getting values from storage
+function setInputsData() {
+  const inputsDataObj = JSON.parse(localStorage.getItem('inputsData'));
+  document.getElementById('fullname').value = inputsDataObj.name;
+  document.getElementById('email').value = inputsDataObj.email;
+  document.getElementById('message').value = inputsDataObj.message;
+}
+
+// Setting values in storage
+function populateStorage() {
+  const inputsDataObj = {};
+
+  inputsDataObj.name = document.getElementById('fullname').value;
+  inputsDataObj.email = document.getElementById('email').value;
+  inputsDataObj.message = document.getElementById('message').value;
+  localStorage.setItem('inputsData', JSON.stringify(inputsDataObj));
+  setInputsData();
+}
+
+if (storageAvailable('localStorage')) {
+  // Yippee! We can use localStorage awesomeness
+  // Testing whether your storage has been populated
+  if (!localStorage.getItem('inputsData')) {
+    populateStorage();
+  } else {
+    setInputsData();
+  }
+}
+
+// Update storage whenever a form value is changed
+const name = document.getElementById('fullname');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+name.addEventListener('input', populateStorage);
+email.addEventListener('input', populateStorage);
+message.addEventListener('input', populateStorage);
