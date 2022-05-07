@@ -2,6 +2,8 @@
 
 # **_my-professional-portfolio_** project
 
+> Microverse Module 01 Project: This is my working portfolio. Inside you will find my background information, contacts, and project showcase. Built with HTML, CSS and JavaScript.
+
 > Description: This is a professional project with Micoverse, This project was built to show My professional work and hard-skills as a full-stack web developer.
 
 ## Deployment
